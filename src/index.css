@@ -51,3 +51,30 @@ code {
 .box-shadow {
   box-shadow: 10px 10px 50px 3px #275C8D1A;
 }
+
+.mobile-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media(max-width: 768px) {
+  .mob-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .shadow-blue, .shadow-white {
+    height: 200px;
+  }
+
+  .grid-div {
+    display: block;
+  }
+  
+  .grid-item:nth-of-type(1) p {
+    width: 100%;
+  }
+
+  .translate {
+    transform: translateY(40px);
+  }
+}

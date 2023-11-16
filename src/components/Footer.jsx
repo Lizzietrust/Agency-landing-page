@@ -13,19 +13,19 @@ import image3 from '../assets/doodle-5 1.png';
 
 const Footer = () => {
   return (
-    <div className='bg-[#2ED57380] px-[7%] py-12 relative'>
+    <div className='bg-[#2ED57380] px-[7%] py-12 max-[768px]:pb-24 relative'>
         <img src={image1} alt="" className='absolute -top-[70px] right-[2%]' />
 
         <div className="border-b border-[#000] pb-4">
-            <div className='flex justify-between mb-6'>
-                <div className='w-[40%]'>
+            <div className='flex justify-between mb-6 max-[768px]:flex-col'>
+                <div className='w-[40%] max-[768px]:w-full mb-12'>
                     <img src={logo} alt="logo" className='mb-10' />
                     <p className='leading-[22px] text-[#454646]'>
                         Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum. Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te. Ex duo eripuit mentitum.
                     </p>
                 </div>
 
-                <div className='flex gap-20 mr-24'>
+                <div className='flex gap-20 mr-24 max-[768px]:mr-0 max-[768px]:flex-wrap'>
                     <div>
                         <p className='text-lg mb-8'>Pages</p>
 
@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <ul className='flex items-end justify-end gap-8 text-lg font-bold'>
+            <ul className='flex items-end justify-end gap-8 text-lg font-bold max-[768px]:flex-wrap'>
                 <li>New York</li>
                 <li>Dubai</li>
                 <li>Dhaka</li>
@@ -67,9 +67,9 @@ const Footer = () => {
         </div>
 
         <div className='pt-6 relative'>
-            <img src={image2} alt="" className='absolute bottom-0 -left-[8%]' />
+            <img src={image2} alt="" className='absolute bottom-0 max-[768px]:bottom-16 -left-[8%]' />
 
-            <div className='flex items-center justify-center gap-6'>
+            <div className='flex items-center justify-center gap-6 max-[768px]:flex-wrap'>
                 <img src={visa} alt="" />
                 <img src={amex} alt="" />
                 <img src={paypal} alt="" />
@@ -79,7 +79,7 @@ const Footer = () => {
                 <img src={bancontact} alt="" />
             </div>
 
-            <div className='flex items-center justify-between mt-16'>
+            <div className='flex items-center justify-between mt-16 max-[768px]:mt-20 max-[768px]:flex-col max-[768px]:gap-12'>
                 <p className='text-lg text-[#494949]'>
                     © 2019-2020 All Rights Reserved.
                 </p>
@@ -89,7 +89,7 @@ const Footer = () => {
                 </p>
             </div>
 
-            <img src={image3} alt="" className='absolute -bottom-10 -right-[8%]' />
+            <img src={image3} alt="" className='absolute -bottom-10 max-[768px]:-bottom-16 -right-[8%]' />
         </div>
     </div>
   )

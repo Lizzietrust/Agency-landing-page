@@ -5,8 +5,8 @@ import sub from '../assets/Subscribe us.png';
 const Subscribe = () => {
   return (
     <div className='w-full h-[453px] bg-[#FF475780] px-[7%] flex items-center relative'>
-        <div className='w-1/2'>
-            <h2 className='text-[37px] leading-[56px] text-[#4F4F4F] font-bold mb-6'>
+        <div className='w-1/2 max-[768px]:w-full'>
+            <h2 className='text-[37px] leading-[56px] text-[#4F4F4F] font-bold mb-6 max-[768px]:mb-10 max-[768px]:text-center'>
                 Grow your business with better Shipping organizations
             </h2>
 
@@ -21,8 +21,8 @@ const Subscribe = () => {
             </form>
         </div>
 
-        <img src={sub} alt="" className='absolute -top-6 right-[35%] z-50' />
-        <img src={image} alt="" className='-translate-y-12' />
+        <img src={sub} alt="" className='absolute -top-6 right-[35%] z-50 max-[768px]:hidden' />
+        <img src={image} alt="" className='-translate-y-12 max-[768px]:hidden' />
     </div>
   )
 }

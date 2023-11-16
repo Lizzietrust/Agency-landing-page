@@ -5,21 +5,21 @@ import { boxes } from '../constant';
 const Design = () => {
   return (
     <div className='px-[7%] pt-12 pb-16'>
-        <div className='flex justify-between'>
-            <h1 className='text-[52px] leading-[57px] text-[#23242A] font-bold'>
+        <div className='flex justify-between max-[768px]:flex-col'>
+            <h1 className='text-[52px] max-[768px]:text-3xl max-[768px]:text-center leading-[57px] text-[#23242A] font-bold'>
                 The best design for your <br />studio website
             </h1>
 
-            <a href="#" className='flex gap-4 mt-4 text-[21px] text-[#E5E5E5] underline cursor-pointer'>
+            <a href="#" className='flex max-[768px]:justify-center gap-4 mt-4 text-[21px] text-[#E5E5E5] underline cursor-pointer'>
                 Experienced team
                 <img src={arrow} alt="" className='w-[30px] h-[30px] ' />
             </a>
         </div>
 
-        <div className="flex mt-12 gap-8">
+        <div className="flex max-[768px]:block mt-12 gap-8">
             {
                 boxes.map((item) => (
-                    <div key={item.id} className='w-[33.33%] h-[398px] box-shadow rounded-xl'>
+                    <div key={item.id} className='w-[33.33%] max-[768px]:w-full max-[768px]:mb-10 h-[398px] box-shadow rounded-xl'>
                         <div className='p-8 h-[328px]'>
                             <h2 className='text-[44px] text-[#23242A] font-bold mb-4'>{item.text}</h2>
                             <p className='leading-[21px] text-[#23242A] font-semibold'>{item.paragraph}</p>
